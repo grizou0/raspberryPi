@@ -10,7 +10,7 @@ lrwxrwxrwx 1 root root 15 nov 24 22:17 997C-A34A -> ../../mmcblk0p1
 
 Auto mount au démarrage di raspberry: 
 ------------------------------------
-sudo nano /etc/fstab 
+sudo nano /etc/fstab  
 Addition en fin de ligne  
 UUID=69A3-408D /media/usb vfat auto,nofail,noatime,users,rw,uid=pi,gid=pi 0 0
 
