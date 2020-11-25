@@ -1,3 +1,3 @@
 # raspberryPi
-command générale
+command générale  
 #Installation Usb Stick memory
