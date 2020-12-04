@@ -24,19 +24,16 @@ On installe ensuite RealVNC client sur le pc (voir site realvnc)
 
 Si erreur de connction "Could not acquire name on session bus"  
 il faut modifier le fichier sudo nano ~/.vnc/xstartup 
-#!/bin/sh 
-unset SESSION_MANAGER 
-unset DBUS_SESSION_BUS_ADDRESS  
+#!/bin/sh   
+unset SESSION_MANAGER   
+unset DBUS_SESSION_BUS_ADDRESS      
 mate-session  
 xrdb $HOME/.Xresources  
 xsetroot -solid grey  
-x-terminal-emulator -geometry 80x24+10+110 -ls -title "$VNCDESKTOP Desktop" & 
+x-terminal-emulator -geometry 80x24+10+110 -ls -title "$VNCDESKTOP Desktop" &   
 x-window-manager  
 export XKL_XMODMAP_DISABLE=1  
-/etc/X11/Xsession 
-
-
-
+/etc/X11/Xsession   
 
 #----------------------------------     
 # Installation Usb Stick memory 
