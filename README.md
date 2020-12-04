@@ -1,22 +1,22 @@
-# raspberryPi
-command générale  
-# Installation VNC sur Raspberry Pi Ubuntu
-A:Solution  
-    sudo dpkg --add-architecture armhf && sudo apt update 
-    sudo apt install libx11-6 
+# raspberryPi    
+# Installation VNC sur Raspberry Pi Ubuntu 20.10    
+A:Solution  (en essai , no fonctionnel )    
+    sudo dpkg --add-architecture armhf && sudo apt update   
+    sudo apt install libx11-6   
     download RealVNC Server for Raspberry (https://www.realvnc.com/download/file/vnc.files/VNC-Server-6.7.2-Linux-ARM.deb 32) and Install with GDebi  
-B:Autre solution via tightvncserver 
-sudo apt-get update 
-sudo apt-get upgrade -y
-sudo apt-get install tightvncserver
-ensuite on lance > vncserver :1 -geometry 1280x800 -depth 16
-Pour arrêter: > vncserver -kill :1
-Pour changer le passward: >tightvncpasswd
-Pour le lancer en auto boot:
+B:Autre solution via tightvncserver     
+sudo apt-get update     
+sudo apt-get upgrade -y 
+sudo apt-get install tightvncserver 
+ensuite on lance > vncserver :1 -geometry 1280x800 -depth 16    
+Pour arrêter: > vncserver -kill :1  
+Pour changer le passward: >tightvncpasswd   
 
-sudo crontab -e
-addition de la ligne:
-@reboot su - pi -c '/usr/bin/tightserver -geometry 1280x720'
+Pour le lancer en auto boot:(en essai, non fonctionnel sur ubuntu)  
+
+sudo crontab -e 
+addition de la ligne:   
+@reboot su - pi -c '/usr/bin/tightserver -geometry 1280x720'    
 
 
 
@@ -38,9 +38,9 @@ export XKL_XMODMAP_DISABLE=1
 
 
 
-
-# Installation Usb Stick memory
-Identification ID:  
+#----------------------------------     
+# Installation Usb Stick memory 
+Identification ID:      
 pi@raspberrypi:~ $  ls -l /dev/disk/by-uuid/  
 total 0 
 lrwxrwxrwx 1 root root 15 nov 24 22:17 05c2c54d-f13e-4442-bf69-70e99c3d748d -> ../../mmcblk0p2  
@@ -51,7 +51,8 @@ Auto mount au démarrage du raspberry:
 ------------------------------------
 sudo nano /etc/fstab  
 Addition en fin de ligne  
-UUID=69A3-408D /media/usb vfat auto,nofail,noatime,users,rw,uid=pi,gid=pi 0 0
+UUID=69A3-408D /media/usb vfat auto,nofail,noatime,users,rw,uid=pi,gid=pi 0 0   
+
 
 
 
