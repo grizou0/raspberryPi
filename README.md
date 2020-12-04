@@ -6,8 +6,8 @@ A:Solution  (en essai , no fonctionnel )
     download RealVNC Server for Raspberry (https://www.realvnc.com/download/file/vnc.files/VNC-Server-6.7.2-Linux-ARM.deb 32) and Install with GDebi  
 B:Autre solution via tightvncserver     
 sudo apt-get update     
-sudo apt-get upgrade -y 
-sudo apt-get install tightvncserver 
+sudo apt-get upgrade -y     
+sudo apt-get install tightvncserver     
 ensuite on lance > vncserver :1 -geometry 1280x800 -depth 16    
 Pour arrêter: > vncserver -kill :1  
 Pour changer le passward: >tightvncpasswd   
