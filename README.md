@@ -18,7 +18,7 @@ arm_gpu=750
 # Edition bashrc    
 sudo nano ~/.bashrc   
 
-# installation de ssh (commande console via le port 22)       
+# installation de ssh (commande console via le port 22) pour os ubuntu 20
 sudo apt install openssh-server     
 sur la console pc, on accède avec:      
 ssh pi/192.168.0.xx     
