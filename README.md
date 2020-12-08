@@ -18,12 +18,12 @@ arm_gpu=750
 # Edition bashrc    
 sudo nano ~/.bashrc   
 
-#installation de ssh (commande console via le port 22)       
+# installation de ssh (commande console via le port 22)       
 sudo apt install openssh-server     
 sur la console pc, on accède avec:      
 ssh pi/192.168.0.xx     
 
-#Installation de VNC sur raspberry pi 4 ubuntu 20.10
+# Installation de VNC sur raspberry pi 4 ubuntu 20.10
 
 sudo apt-get update     
 sudo apt-get upgrade -y     
@@ -64,12 +64,9 @@ lrwxrwxrwx 1 root root 15 nov 24 22:17 05c2c54d-f13e-4442-bf69-70e99c3d748d -> .
 lrwxrwxrwx 1 root root 10 nov 25 15:56 69A3-408D -> ../../sda1  
 lrwxrwxrwx 1 root root 15 nov 24 22:17 997C-A34A -> ../../mmcblk0p1 
 
-Auto mount au démarrage du raspberry: 
+# Auto mount au démarrage du raspberry: 
 ------------------------------------
 sudo nano /etc/fstab  
 Addition en fin de ligne  
 UUID=69A3-408D /media/usb vfat auto,nofail,noatime,users,rw,uid=pi,gid=pi 0 0   
-
-
-
 
