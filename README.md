@@ -1,5 +1,22 @@
 
-# raspberryPi    
+# raspberryPi  
+# Raspberry Pi 4 64 bit   
+Apres l'installation de l'os raspbian, on fait un upgrade:    
+rpi-update    
+
+sudo nano /boot/config.txt    
+on ajoute en fin de fichier:    
+
+# Overclock   
+sudo nano /boot/config.txt    
+On ajoute:    
+over_voltage=6    
+arm_freq=2000   
+arm_gpu=750   
+
+# Edition bashrc    
+sudo nano ~/.bashrc   
+
 #installation de ssh (commande console via le port 22)       
 sudo apt install openssh-server     
 sur la console pc, on accède avec:      
