@@ -6,6 +6,7 @@ rpi-update
 
 sudo nano /boot/config.txt    
 on ajoute en fin de fichier:    
+ arm_64bit=1    
 
 # Overclock   
 sudo nano /boot/config.txt    
